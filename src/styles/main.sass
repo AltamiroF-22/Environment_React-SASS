@@ -1,0 +1,23 @@
+@use 'variables'
+@use 'mixins'
+
+*
+   padding: 0
+   margin: 0
+   box-sizing: border-box
+   font-family: variables.$principal-font
+
+
+body
+   height: 100vh
+   background: #000000
+   @include mixins.flex-center
+
+   h1
+      color: variables.$primary-color
+      transition: .2s
+      cursor: pointer     
+      text-shadow: 0 0rem 3rem         
+   span
+      color: variables.$font-color
+
